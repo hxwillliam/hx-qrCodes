@@ -14,7 +14,7 @@ export class InputComponent {
   @Input({required: true}) data?: string;
   @Output() dataChange: EventEmitter<string> = new EventEmitter<string>();
   qrCodeData: string = '';
-  link: string = 'hxwilliam.org';
+  link: string = 'https://www.hxwilliam.org';
 
   generateQRCode() {
     this.data = this.link;
