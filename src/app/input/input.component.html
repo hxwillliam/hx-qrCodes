@@ -1,0 +1,13 @@
+<section>
+    <form (submit)="generateQRCode()">
+        <input type="text" [(ngModel)]="link" name="link" placeholder="Paste link here" style="width: 50%;">
+        <button type="submit">Enter</button>
+    </form>
+    <br>
+    <div>
+    <p *ngIf="qrCodeData; else noLink">Enter a link to generate QR code</p>
+        <ng-template #noLink>
+            <img src="{{qrCodeData}}"/>
+        </ng-template>
+    </div>
+</section>

@@ -1,0 +1,6 @@
+.qrcodeImage {
+    display: flex;
+    flex: 1;
+    border-radius: 5%;
+  }
+  
