@@ -1,5 +1,5 @@
 # HxQrCodes
-
+clone repo
 
 ## Development server
 
